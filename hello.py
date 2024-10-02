@@ -7,8 +7,8 @@ app = typer.Typer()
 
 @app.command()
 def compare(
-    photo1_path: typer.Argument(str, help="File 1 path"),
-    photo2_path: typer.Argument(str, help="File 2 path"),
+    photo1_path: str = typer.Argument(..., help="File 1 path"),
+    photo2_path: str = typer.Argument(..., help="File 2 path"),
 ):
     # Initialize face analysis application
     app = FaceAnalysis()
