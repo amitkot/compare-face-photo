@@ -1,9 +1,9 @@
 import insightface
 from insightface.app import FaceAnalysis
 import typer
+import numpy as np
 
 app = typer.Typer()
-
 
 @app.command()
 def compare(
@@ -15,8 +15,8 @@ def compare(
     app.prepare(ctx_id=-1)  # use CPU (for macOS)
 
     # Load images
-    img1 = insightface.utils.face_align("path_to_image1.jpg")
-    img2 = insightface.utils.face_align("path_to_image2.jpg")
+    img1 = insightface.utils.face_align(photo1_path)
+    img2 = insightface.utils.face_align(photo2_path)
 
     # Get face embeddings
     embedding1 = app.get(img1)[0].embedding
@@ -27,7 +27,6 @@ def compare(
         np.linalg.norm(embedding1) * np.linalg.norm(embedding2)
     )
     print("Similarity score:", similarity)
-
 
 if __name__ == "__main__":
     # run typer app
