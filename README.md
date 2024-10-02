@@ -12,7 +12,7 @@ This tool allows you to compare two photos of faces and determine their similari
 
 ## Usage
 
-### Debug Mode
+### Normal Mode
 
-To debug and visualize the bounding boxes around detected faces, use the `debug` command:
+To compare two photos of faces, use the following command:
 
