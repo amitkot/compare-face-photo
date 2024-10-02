@@ -1,7 +1,0 @@
-
-This will save two images with bounding boxes around the detected faces.
-
-### Compare Mode
-
-To compare the similarity between two photos of faces, use the `compare` command:
-
