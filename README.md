@@ -5,9 +5,9 @@ This tool allows you to compare two photos of faces and determine their similari
 ## Installation
 
 1. Ensure you have Python installed on your system.
-2. Install the required dependencies using poetry:
+2. Install the required dependencies using `uv`:
    ```sh
-   poetry install
+   uv sync
    ```
 
 ## Usage
