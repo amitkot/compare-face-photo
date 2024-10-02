@@ -12,7 +12,18 @@ This tool allows you to compare two photos of faces and determine their similari
 
 ## Usage
 
-### Normal Mode
+### Compare
 
-To compare two photos of faces, use the following command:
+```shell
+uv run compare.py compare <path_to_image1> <path_to_image2>
+```
+
+This command will output the similarity score between the two images. A higher score indicates greater similarity.
+
+### Debug
+
+To show the bounding boxes of the detected faces in the images, use:
+```shell
+uv run compare.py debug <path_to_image1> <path_to_image2>
+```
 
