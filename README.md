@@ -2,6 +2,8 @@
 
 This tool allows you to compare two photos of faces and determine their similarity.
 
+Created with the help of [Aider](https://aider.chat).
+
 ## Installation
 
 1. Ensure you have Python installed on your system.

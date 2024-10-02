@@ -117,7 +117,7 @@ wheels = [
 ]
 
 [[package]]
-name = "compare-face-photo-2"
+name = "compare-face-photo"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
